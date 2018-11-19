@@ -1,0 +1,18 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blue-box {
+  background-color: deepskyblue;
+  color: #fff;
+  width: 26rem;
+  height: 26rem;
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

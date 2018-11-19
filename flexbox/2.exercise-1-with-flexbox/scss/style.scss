@@ -1,0 +1,20 @@
+.total {
+   background-color: #ddd;
+  text-transform: uppercase;
+  width: 26rem;
+  margin: 3em auto 0;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.literal {
+  font-weight: 300;
+}
+.amount {
+  font-size: 1.5em;
+  color: #abc111;
+  span {
+    font-size: .8em;
+  }
+}

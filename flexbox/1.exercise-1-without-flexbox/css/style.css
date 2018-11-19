@@ -1,0 +1,22 @@
+.total {
+  background-color: #ddd;
+  text-transform: uppercase;
+  width: 26rem;
+  margin: 3em auto 0;
+  padding: 1em;
+  overflow: hidden;
+}
+
+.literal {
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+.amount {
+  font-size: 1.5em;
+  float: right;
+  color: #abc111;
+}
+.amount span {
+  font-size: .8em;
+}
