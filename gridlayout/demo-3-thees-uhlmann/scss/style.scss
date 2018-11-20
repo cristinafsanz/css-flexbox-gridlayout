@@ -1,0 +1,40 @@
+.grid{
+	display: grid;
+	grid-template-columns: repeat(3, 8rem);
+	grid-template-rows: repeat(4, 8rem);
+	width: 24rem;
+	margin: 2rem auto;
+	&__item{
+		font-family: sans-serif;
+		font-size: 3rem;
+		color: white;
+		
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		
+		&-1,
+		&-5{
+			grid-column: span 2;
+		}
+		&-2{
+			grid-row: span 2;
+		}
+		&-4{
+			grid-column: 1;
+		}
+		&-6{
+			grid-column: 2;
+		}
+	}
+}
+
+.orange{
+	background-color: #EB5D45;
+}
+.green{
+	background-color: #22B5B0;
+}
+.black{
+	background-color: #333;
+}

@@ -1,0 +1,67 @@
+/*
+background-color: #009BB1;
+
+background-color: #EE8C1D;
+
+background-color: #05368C;
+
+background-color: #009135;
+
+background-color: #E22961;
+
+background-color: #5C66A5;
+
+background-color: #FCCC29;
+
+background-color: #62B9E4;
+
+background-color: #E1261C;
+
+background-color: #95C022;
+
+background-color: #911C7F;
+
+*/
+.grid {
+  display: grid;
+  grid-template-rows: repeat(4, 4rem);
+  grid-template-columns: repeat(8, 4rem);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.grid__item-1 {
+  background-color: #009bb1;
+}
+.grid__item-2 {
+  background-color: #ee8c1d;
+  grid-column: 1;
+}
+.grid__item-3 {
+  background-color: #05368c;
+  grid-column: 1;
+}
+.grid__item-4 {
+  background-color: #009135;
+  grid-column: 1;
+}
+.grid__item-5 {
+  background-color: #e22961;
+}
+.grid__item-6 {
+  background-color: #5c66a5;
+}
+.grid__item-7 {
+  background-color: #fccc29;
+}
+.grid__item-8 {
+  background-color: #62b9e4;
+}
+.grid__item-9 {
+  background-color: #e1261c;
+}
+.grid__item-10 {
+  background-color: #95c022;
+}
+.grid__item-11 {
+  background-color: #911c7f;
+}

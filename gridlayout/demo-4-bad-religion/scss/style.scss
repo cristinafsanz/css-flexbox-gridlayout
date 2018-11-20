@@ -1,0 +1,31 @@
+.grid{
+	background-color: #DBE1D0;
+	min-height: 100vh;
+	padding: 1rem;
+	
+	display: grid;
+	grid-template-areas:
+		"header header"
+		"bad empty"
+		"religion religion";
+	grid-gap: 1rem;
+	grid-template-columns: minmax(20rem, 2fr) minmax(10rem, 1fr);
+	grid-template-rows: 6rem 1fr 1fr;
+}
+
+.header{
+	grid-area: header;
+	background: #000;
+}
+.bad{
+	grid-area: bad;
+	background-color: #F33E00;
+}
+.empty{
+	grid-area: empty;
+	background-color: #F33E00;
+}
+.religion{
+	grid-area: religion;
+	background-color: #F33E00;
+}

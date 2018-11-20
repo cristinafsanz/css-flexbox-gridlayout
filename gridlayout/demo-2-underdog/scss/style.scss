@@ -1,0 +1,28 @@
+.grid{
+	background-color: #F12000;
+	width: 30rem;
+	margin: 1rem auto;
+	
+	display: grid;
+	grid-template-columns: repeat(3, 10rem);
+	grid-template-rows: repeat(2, 10rem) 5rem;
+	
+	&__item{
+		border-top: 5rem solid transparent;
+		border-bottom: 5rem solid transparent;
+		border-right: 5rem solid transparent;
+		
+		&-1,
+		&-5{
+			border-left: 10rem solid #DDE0D7;
+		}
+		&:not(&-1):not(&-5){
+			border-left: 10rem solid #000;
+		}
+		&-2,
+		&-5{
+			transform: translateY(50%);
+		}
+	}
+
+}

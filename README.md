@@ -1,7 +1,11 @@
 # css-flexbox-gridlayout
 Use cases CSS Flexbox and CSS Grid Layout
 
-The first 6 examples were exported as zip from my [Codepen collection](https://codepen.io/collection/DQKNRK/). Each one had this setting:
+## Flexbox
+
+- Exercises from [Diana Aceves' course in Escuela IT](https://escuela.it/cursos/taller-profesional-flexbox).
+
+The first 3 exercises were exported as zip from my [Codepen collection](https://codepen.io/collection/DQKNRK/). Each one had this setting:
 
   - HTML without Preprocessor.
   
@@ -12,10 +16,6 @@ The first 6 examples were exported as zip from my [Codepen collection](https://c
     - [Diana CSS Normalize](https://codepen.io/diana_aceves/pen/QELXOY)
 
     - [Font Awesome](https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css)
-
-## Flexbox
-
-Exercises from [Diana Aceves' course in Escuela IT](https://escuela.it/cursos/taller-profesional-flexbox).
 
 ### Exercise 1
 
@@ -95,6 +95,57 @@ Exercises from [Diana Aceves' course in Escuela IT](https://escuela.it/cursos/ta
   - [Code](flexbox/6.exercise-4-with-flexbox-header-with-menu)
 
   - [Demo](https://cristinafsanz.github.io/css-flexbox-gridlayout/flexbox/6.exercise-4-with-flexbox-header-with-menu/index.html)
+
+
+## CSS Grid Layout
+
+- [Workshop Rock' n' Grid Diana Aceves](https://www.youtube.com/watch?v=p7oXrr9yjXY&feature=youtu.be)
+
+- [Demos Codepen](https://codepen.io/collection/DLWVMR/)
+
+- Designs: https://www.swissted.com/.
+
+### [Demo 1](https://youtu.be/p7oXrr9yjXY?t=558)
+
+  ![Demo 1 image](images/gridlayout/demo-1.png?raw=true)
+
+  - [Code](gridlayout/demo-1-pet-shop-boys)
+
+  - [Demo](https://cristinafsanz.github.io/css-flexbox-gridlayout/gridlayout/demo-1-pet-shop-boys/index.html)
+
+  - Notes:
+
+    - Grid 4 rows and 8 columns. 11 items in total.
+
+      - `grid-template-rows: 4rem 4rem 4rem 4rem`: 4 rows with 4 rem 
+        
+        - same as `grid-template-rows: repeat(4, 4rem)`
+
+    - At the beginning (add numbers to display them better): 
+    ```
+    1 2 3 4 5 6 7 8
+    9 10 11
+    ```
+
+    - Item 2: `grid-column: 1`: Item 2 in line 1 (better set only the needed ones and with columns)
+    ```
+    1
+    2 3 4 5 6 7 8 9
+    10 11
+    ```
+
+    - In this case: Only is needed to change 1 coordinate for 3 items
+    ```
+    1
+    2 
+    3 
+    4 5 6 7 8 9 10 11
+    ```
+
+    - After all changes remove numbers
+    
+### [Demo 2](https://youtu.be/p7oXrr9yjXY?t=2198)
+
 
 
 

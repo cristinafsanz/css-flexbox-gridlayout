@@ -1,0 +1,46 @@
+@charset "UTF-8";
+.grid {
+  background-color: #DFE1D6;
+  width: calc(28rem + 6px);
+  margin: 2rem auto 0;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(5, 7rem);
+  grid-template-rows: repeat(4, 7rem);
+  grid-gap: 2px;
+}
+.grid__item {
+  background-color: #CD0071;
+  border-radius: 50%;
+  position: relative;
+  left: -50%;
+}
+
+.overlay::after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: #06A1D4;
+  mix-blend-mode: multiply;
+  opacity: .9;
+  -webkit-filter: saturate(200%);
+          filter: saturate(200%);
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  z-index: 1;
+}
+
+/*IMPORTANTE:
+Acabo de ver que en browsers webkit, se rompe el layout. Los overlays no salen donde tienen que salir y el 50% de translate de los items para que se "salgan" y pueda partirlo a la mitad, tampoco.
+Dejo aquí el código modificado que funciona para Chrome pero no modifico el que aparece en el vídeo, para no confundir. */
+.grid__item {
+  left: -3.5rem;
+}
+
+.overlay::after {
+  -webkit-transform: none;
+          transform: none;
+  position: absolute;
+  left: 50%;
+}
