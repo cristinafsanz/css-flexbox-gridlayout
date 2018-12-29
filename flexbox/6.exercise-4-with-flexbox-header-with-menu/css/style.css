@@ -1,0 +1,30 @@
+header {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: .9em;
+    padding: 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    color: #8B8B8B;
+    display: flex;
+}
+nav li {
+    padding: 0 1em;
+    list-style: none;
+}
+.tools > span {
+    background-color: #8B8B8B;
+    display: inline-block;
+    font-size: 1.5em;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+}
+.tools > span:last-child {
+    margin-left: .5em;
+}

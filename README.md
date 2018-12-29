@@ -88,11 +88,27 @@ The first 3 exercises were exported as zip from my [Codepen collection](https://
 
     - [Demo](https://cristinafsanz.github.io/css-flexbox-gridlayout/flexbox/5.exercise-3-with-flexbox-vertical-horizontal-centering/index.html)
 
-### Exercise 4 (not finished)
+### Exercise 4: Header Throne
+
+  [Inspiration](http://throne.stonedthemes.com/)
 
   ![Exercise 4 image](images/flexbox/exercise-4.png?raw=true)
 
   - [Code](flexbox/6.exercise-4-with-flexbox-header-with-menu)
+
+  ```
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav li {
+    padding: 0 1em;
+  } 
+  ```
 
   - [Demo](https://cristinafsanz.github.io/css-flexbox-gridlayout/flexbox/6.exercise-4-with-flexbox-header-with-menu/index.html)
 
