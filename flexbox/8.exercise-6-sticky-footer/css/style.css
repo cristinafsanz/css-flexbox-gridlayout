@@ -1,0 +1,18 @@
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    background-color: salmon;
+}
+main {
+    flex-grow: 1;
+}
+footer {
+    background-color: deepskyblue;
+}
+header,
+footer {
+    height: 7rem;
+}

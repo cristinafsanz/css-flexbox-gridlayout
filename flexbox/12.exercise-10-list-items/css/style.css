@@ -1,0 +1,39 @@
+.stores {
+    max-width: 35rem;
+    margin: 3rem auto;
+}
+.store {
+    list-style: none;
+    background-color: #eee;
+    margin-bottom: .3rem;
+    padding: 1em;
+    display: flex;
+}
+.circle {
+    height: .8em;
+    width: .8em;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-right: 1rem;
+}
+.circle.blue {
+    background-color: #6ec5cc;
+}
+.circle.purple {
+    background-color: purple;
+}
+.circle.green {
+    background-color: green;
+}
+.next {
+    font-size: 1.5em;
+    align-self: center;
+}
+.store-id {
+    flex-basis: 20%;
+    flex-shrink: 0;
+}
+.address-tpv {
+    flex-grow: 1;
+    margin-right: 1em;
+}

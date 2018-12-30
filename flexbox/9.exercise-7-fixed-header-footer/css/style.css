@@ -1,0 +1,20 @@
+.app {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    background-color: salmon;
+}
+main {
+    flex-grow: 1;
+    overflow: auto;
+}
+footer {
+    background-color: deepskyblue;
+}
+header,
+footer {
+    height: 7rem;
+    flex-shrink: 0;
+}

@@ -1,0 +1,19 @@
+.input-wrapper {
+    border: 1px solid gray;
+    max-width: 26rem;
+    margin: 3rem auto;
+    display: flex;
+    border-radius: .5rem;
+    overflow: hidden;
+    min-width: 0;
+}
+input {
+    padding: .5em;
+    flex-grow: 1;
+    border: none;
+}
+.search {
+    background-color: gray;
+    color: white;
+    padding: .5rem .8rem;
+}

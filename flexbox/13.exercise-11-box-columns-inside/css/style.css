@@ -1,0 +1,48 @@
+body {
+    font-size: .9em;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 2rem auto;
+}
+.info-box {
+    background-color: #eee;
+    flex-basis: 44%;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+.icon,
+.title,
+.text-container {
+    background: white;
+    border: 1px solid #ddd;
+    padding: .5em;
+}
+.icon,
+.title,
+.text-container,
+.info-box {
+    border-radius: .5em;
+}
+.icon,
+.title > span {
+    color: red;
+}
+.text-container {
+    margin-top: 1em;
+    padding: .5em;
+    flex-grow: 1;
+}
+header {
+    display: flex;
+}
+.title {
+    flex-grow: 1;
+    margin-left: .5em;
+}
+.title > span {
+    color: red;
+}

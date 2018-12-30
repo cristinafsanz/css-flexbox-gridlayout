@@ -1,0 +1,26 @@
+.app {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header,
+footer {
+    height: 7rem;
+    flex-shrink: 0;
+    background-color: salmon;
+}
+#main {
+    flex-grow: 1;
+    overflow: auto;
+    display: flex;
+}
+nav,
+aside {
+    background-color: deepskyblue;
+    flex-basis: 15%;
+}
+article {
+    background-color: #eee;
+    flex-grow: 1;
+    overflow: auto;
+}
