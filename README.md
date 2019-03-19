@@ -8,7 +8,7 @@ Use cases CSS Flexbox and CSS Grid Layout
 The first 3 exercises were exported as zip from my [Codepen collection](https://codepen.io/collection/DQKNRK/). Each one had this setting:
 
   - HTML without Preprocessor.
-  
+
   - CSS with SCSS Preprocessor and Vendor Prefixing Autoprefixer.
 
   - External stylesheets:
@@ -107,7 +107,7 @@ The first 3 exercises were exported as zip from my [Codepen collection](https://
   }
   nav li {
     padding: 0 1em;
-  } 
+  }
   ```
 
   - [Demo](https://cristinafsanz.github.io/css-flexbox-gridlayout/flexbox/6.exercise-4-with-flexbox-header-with-menu/index.html)
@@ -324,10 +324,76 @@ Mejor empezar con mobile (mobile first) aunque aquí se haga al revés.
 
   - [Demo](https://cristinafsanz.github.io/css-flexbox-gridlayout/flexbox/13.exercise-11-box-columns-inside/index.html)
 
-### TODO: 
+### TODO:
 Falta por hacer la [última clase](https://escuela.it/cursos/taller-profesional-flexbox/clase/practicas-y-ejemplos-iv) a partir de minuto 47.
 
 ## CSS Grid Layout
+
+- Exercises from [Diana Aceves' course in Escuela IT](https://escuela.it/cursos/taller-de-css-grid-layout).
+
+### Exercise 1
+
+![Exercise 1 image](images/gridlayout/exercise-1.png?raw=true)
+
+  - [Code](gridlayout/1.exercise-template-column-row)
+
+    ```html
+    <div class="grid">
+        <div class="grid-item item1">1</div>
+        <div class="grid-item item2">2</div>
+        <div class="grid-item item3">3</div>
+        <div class="grid-item item4">4</div>
+        <div class="grid-item item5">5</div>
+        <div class="grid-item item6">6</div>
+        <div class="grid-item item7">7</div>
+        <div class="grid-item item8">8</div>
+        <div class="grid-item item9">9</div>
+        <div class="grid-item item10">10</div>
+        <div class="grid-item item11">11</div>
+        <div class="grid-item item12">12</div>
+      </div>
+    ```
+
+    ```css
+    .grid {
+      display: grid;
+
+      /*TRACK SIZE*/
+      grid-template-columns: 200px 200px 200px 200px;
+      grid-template-rows: 150px 150px 150px;
+
+      /*GAP*/
+      grid-row-gap: 1rem;
+      grid-column-gap: 2rem;
+      grid-gap: 1rem;
+
+      /*FR UNIT*/
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+
+      /*MIX UNITS*/
+      grid-template-columns: 200px 1fr 1fr;
+      grid-template-columns: 20% 1fr;
+
+      /*WITH ROWS TOO */
+      grid-template-rows: 1fr 1fr 1fr;
+      /*but you have to set a height */
+      height: 200vh;
+
+      /*AUTO SIZES:*/
+
+      /*Extend to rows not set explicitly */
+      grid-template-rows: 150px 1fr 1fr;
+      grid-auto-rows: 1fr;
+
+      grid-template-rows: 150px 250px 100px;
+      grid-auto-rows: 150px;
+    }
+    ```
+
+    - [Demo](https://cristinafsanz.github.io/css-flexbox-gridlayout/gridlayout/1.exercise-template-column-row/index.html)
+
+
+### Rock' n' Grid Wecodefest Diana Aceves
 
 - [Workshop Rock' n' Grid Diana Aceves](https://www.youtube.com/watch?v=p7oXrr9yjXY&feature=youtu.be)
 
@@ -335,7 +401,7 @@ Falta por hacer la [última clase](https://escuela.it/cursos/taller-profesional-
 
 - Designs: https://www.swissted.com/.
 
-### [Demo 1](https://youtu.be/p7oXrr9yjXY?t=558)
+#### [Demo 1](https://youtu.be/p7oXrr9yjXY?t=558)
 
   ![Demo 1 image](images/gridlayout/demo-1.png?raw=true)
 
@@ -347,11 +413,11 @@ Falta por hacer la [última clase](https://escuela.it/cursos/taller-profesional-
 
     - Grid 4 rows and 8 columns. 11 items in total.
 
-      - `grid-template-rows: 4rem 4rem 4rem 4rem`: 4 rows with 4 rem 
-        
+      - `grid-template-rows: 4rem 4rem 4rem 4rem`: 4 rows with 4 rem
+
         - same as `grid-template-rows: repeat(4, 4rem)`
 
-    - At the beginning (add numbers to display them better): 
+    - At the beginning (add numbers to display them better):
     ```
     1 2 3 4 5 6 7 8
     9 10 11
@@ -367,14 +433,14 @@ Falta por hacer la [última clase](https://escuela.it/cursos/taller-profesional-
     - In this case: Only is needed to change 1 coordinate for 3 items
     ```
     1
-    2 
-    3 
+    2
+    3
     4 5 6 7 8 9 10 11
     ```
 
     - After all changes remove numbers
-    
-### [Demo 2](https://youtu.be/p7oXrr9yjXY?t=2198)
+
+#### [Demo 2](https://youtu.be/p7oXrr9yjXY?t=2198)
 
 
 

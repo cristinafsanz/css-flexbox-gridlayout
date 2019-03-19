@@ -1,0 +1,56 @@
+body{
+	font: 3rem sans-serif;
+	background-color: rgba(0,0,0,.2);
+	color: white;
+}
+.grid-item{
+	padding: 1.5rem;
+	border-radius: 1rem;
+}
+.grid-item:nth-child(2n){
+	background-color: #1A83B5;
+}
+.grid-item:nth-child(2n+1){
+	background-color: #37A8E0;
+}
+.grid{
+	padding: 1rem;
+}
+/*****************************/
+
+.grid{
+	display: grid;
+	
+	/*TRACK SIZE*/
+	grid-template-columns: 200px 200px 200px 200px;
+	grid-template-rows: 150px 150px 150px;
+	
+	/*GAP*/
+	grid-row-gap: 1rem;
+	grid-column-gap: 2rem;
+	grid-gap: 1rem;
+	
+	/*FR UNIT*/
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	
+	/*MEZCLA UNIDADES*/
+	grid-template-columns: 200px 1fr 1fr;
+	grid-template-columns: 20% 1fr;
+	
+	/*CON ROWS TAMBIÉN */
+	grid-template-rows: 1fr 1fr 1fr;
+	/*pero tengo que tener un alto*/
+	height: 200vh;
+	
+	/*AUTO SIZES:
+	DETERMINAN EL COMPORTAMIENTO DE LOS TRACKS QUE SE GENERAN IMPLÍCITAMENTE O QUE SU COMPORTAMIENTO NO VIENE DESCRITO EN LA DEFINICIÓN EXPLÍCITA DEL GRID*/
+	
+	/*Extiendo la misma medida para que sigan siendo iguales*/
+	grid-template-rows: 150px 1fr 1fr;
+	grid-auto-rows: 1fr;
+	
+	/*O una distinta*/
+	grid-template-rows: 150px 250px 100px;
+	grid-auto-rows: 150px;
+}
+	
